@@ -1,0 +1,149 @@
+/* Reset some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a basic style to the body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Style for the header */
+header {
+    background-color: orange;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style for the main content */
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.container ,
+.top,
+.riize{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size:20px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+.riize{
+    font-weight:bold;
+    letter-spacing: 0px;
+}
+
+.group-image-container{
+    display: flex; /* 이미지와 텍스트를 가로로 나란히 정렬하기 위해 추가 */
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+
+.group-image{
+    margin-top: 50px;
+}
+
+.group-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.group-text-container,
+.date-container,
+.debut,.date,.sns,.infor{
+    flex: 1;
+    text-align: left;
+    margin-left: 20px; 
+    font-size:16px;
+    line-height: 2;
+}
+
+.date-container{
+    /* display:flex; */
+    margin-left: 0;
+    margin-bottom: 40px;
+}
+.debut{
+    
+    font-weight: bold;
+}
+.date{
+    color: grey;
+}
+
+.group-text-container img{
+    margin-top: 10px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 30px; */
+}
+a{
+    text-decoration: none;
+}
+
+/* ==========================.group-image-container 끝 */
+.music-album{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size:20px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+.music-album{
+    margin-top: 50px;
+}
+.album-image img{
+    margin-top: 10px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Footer style */
+footer {
+    background-color: orange;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 1000px) {
+    .group-image-container{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .group-image{
+        margin-top: 20px;
+    }
+    .date-container{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .group-text-container{
+        align-items: center;
+        margin-left: 0;
+    }
+
+}
