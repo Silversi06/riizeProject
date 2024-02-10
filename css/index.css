@@ -97,7 +97,7 @@ a{
 .music-album{
     max-width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -109,7 +109,7 @@ a{
     margin-top: 50px;
 }
 .album-image img{
-    margin-top: 10px;
+    margin-top: 40px;
     width: 150px;
     justify-content: center;
     align-items: center;
@@ -117,7 +117,7 @@ a{
 
 
 /* Footer style */
-footer {
+/* footer {
     background-color: orange;
     color: #fff;
     text-align: center;
@@ -125,7 +125,7 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
-}
+} */
 
 /* Media query for smaller screens */
 @media only screen and (max-width: 1000px) {
